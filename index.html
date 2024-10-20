@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeconServer</title>
+    <link rel="icon" href="https://cdn.discordapp.com/icons/1249432581900861441/fd303d58f66ee472c979de3a452d699e.png?size=2048" type="image/x-icon">
+    <style>
+        body, html {
+            margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e1e1e; color: white;
+            display: flex; justify-content: center; align-items: center; height: 100vh;
+            overflow: hidden; user-select: none;
+        }
+        .container {
+            text-align: center; padding: 20px;
+        }
+        .avatar {
+            width: 150px; height: 150px; border-radius: 50%; border: 5px solid #FB8E00; 
+            margin-bottom: 20px; transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+        }
+        .avatar:hover {
+            transform: scale(1.1); opacity: 0.9; 
+            box-shadow: 0 0 10px 5px rgba(251, 142, 0, 0.7), 
+                        0 0 20px 10px rgba(251, 142, 0, 0.5);
+        }
+        h1 { font-size: 2.5em; margin: 0; }
+        p { font-size: 1.2em; margin: 15px 0 30px; }
+        .join-button {
+            background-color: #5865F2; color: white; border: none; padding: 12px 25px; 
+            font-size: 1.2em; border-radius: 25px; cursor: pointer; text-transform: uppercase;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .join-button:hover {
+            background-color: #4752c4; transform: scale(1.1); 
+            box-shadow: 0 0 5px 5px #5865F2, 0 0 10px 10px #5865F2;
+        }
+        a { text-decoration: none; }
+        @media (max-width: 768px) {
+            .avatar { width: 120px; height: 120px; margin-bottom: 15px; }
+            h1 { font-size: 2em; }
+            p { font-size: 1em; margin: 10px 0 20px; }
+            .join-button { padding: 10px 20px; font-size: 1em; }
+        }
+        @media (max-width: 480px) {
+            .avatar { width: 100px; height: 100px; }
+            h1 { font-size: 1.8em; }
+            p { font-size: 0.9em; }
+            .join-button { padding: 8px 15px; font-size: 0.9em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn.discordapp.com/icons/1249432581900861441/fd303d58f66ee472c979de3a452d699e.png?size=2048" 
+             alt="жоский беконсервер" class="avatar" draggable="false" loading="lazy">
+        <h1>BeconServer</h1>
+        <p>Сервер для бекона с лучшими краш-ботами</p>
+        <a href="https://discord.com/invite/UWxQP2MADe" target="_blank" aria-label="Присоединиться к серверу">
+            <button class="join-button">Присоединиться к серверу</button>
+        </a>
+    </div>
+    <script>
+        document.addEventListener('copy', (e) => {e.preventDefault();});
+        document.addEventListener('contextmenu', (e) => e.preventDefault());
+        console.log('%cЧто ищешь?', 'font-size: 40px; color: #FB8E00;');
+        console.log('%cЛучше присоединись к беконсерверу', 'font-size: 40px; color: #FB8E00;');
+    </script>
+</body>
+</html>
+ 
